@@ -1,10 +1,10 @@
 import "package:flutter/material.dart";
 import "../screens/lunch_page.dart";
 
-class RecipieContainer extends StatelessWidget {
+class DayCard extends StatelessWidget {
   final String _image;
   final String _name;
-  const RecipieContainer({super.key, required image, required name})
+  const DayCard({super.key, required image, required name})
       : _image = image,
         _name = name;
 

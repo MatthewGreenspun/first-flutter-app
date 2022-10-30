@@ -1,5 +1,5 @@
 import "package:flutter/material.dart";
-import 'day_container.dart';
+import 'day_card.dart';
 
 class DaysList extends StatelessWidget {
   const DaysList({super.key});
@@ -12,11 +12,11 @@ class DaysList extends StatelessWidget {
         child: ListView(
           scrollDirection: Axis.vertical,
           children: const <Widget>[
-            RecipieContainer(image: "assets/monday1.png", name: "Monday"),
-            RecipieContainer(image: "assets/tuesday1.png", name: "Tuesday"),
-            RecipieContainer(image: "assets/wednesday1.png", name: "Wednesday"),
-            RecipieContainer(image: "assets/thursday1.png", name: "Thursday"),
-            RecipieContainer(image: "assets/friday1.png", name: "Friday"),
+            DayCard(image: "assets/monday1.png", name: "Monday"),
+            DayCard(image: "assets/tuesday1.png", name: "Tuesday"),
+            DayCard(image: "assets/wednesday1.png", name: "Wednesday"),
+            DayCard(image: "assets/thursday1.png", name: "Thursday"),
+            DayCard(image: "assets/friday1.png", name: "Friday"),
           ],
         ));
   }
